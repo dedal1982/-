@@ -222,6 +222,9 @@ button {
   display: flex;
   flex-direction: column;
 }
+.services__item {
+  border-right: 1px solid #202020;
+}
 .services__item h4 {
   font-weight: 700;
   font-size: 32px;
@@ -230,6 +233,7 @@ button {
   max-width: 400px;
   width: 100%;
   margin-top: 13px;
+  height: 70px;
 }
 .services__item p {
   font-weight: 500;
@@ -237,4 +241,24 @@ button {
   line-height: 33px;
   margin-top: 20px;
   color: #202020;
+  margin-bottom: 1.6em;
+}
+.services__item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.services__item ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: -1px;
+  color: #202020;
+}
+.services__item ul li span {
+  width: 20px;
+  height: 20px;
+  fill: #ff0033;
 }
