@@ -207,23 +207,26 @@ button {
   display: grid;
   grid-template-columns: repeat(3, minmax(auto, 1fr));
 }
-.services__wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.services__grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(auto, 1fr));
-}
 .services__item {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.services__item {
-  border-right: 1px solid #202020;
+.services__item:not(:last-child) {
+  border-right: 1px dotted #202020;
+}
+.services__item:first-child {
+  padding-right: 48px;
+  box-sizing: border-box;
+}
+.services__item:nth-of-type(2) {
+  padding-left: 80px;
+  padding-right: 48px;
+  box-sizing: border-box;
+}
+.services__item:nth-of-type(3) {
+  padding-left: 80px;
+  box-sizing: border-box;
 }
 .services__item h4 {
   font-weight: 700;
