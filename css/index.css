@@ -526,3 +526,18 @@ button {
   color: #fff;
   text-transform: uppercase;
 }
+/*news*/
+.news {
+  width: 100%;
+  margin-top: 120px;
+}
+.news__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.news__wrapper h3 {
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 1.2em;
+  color: #202020;
+}
