@@ -602,3 +602,24 @@ button {
   display: flex;
   flex-direction: column;
 }
+.map__tabs-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.map__tab {
+  width: 250px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 32px;
+  color: #202020;
+  border: 1px solid #ececec;
+  cursor: pointer;
+}
+.map__tab.active {
+  color: #fff;
+  background: #ff0033;
+}
