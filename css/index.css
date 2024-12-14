@@ -499,15 +499,30 @@ button {
   display: flex;
   flex-direction: column;
   margin-left: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .discussion__text h2 {
   font-size: 62px;
   line-height: 1.2em;
   color: #fff;
+  margin-bottom: 50px;
 }
 .discussion__text p {
   margin-bottom: 1.6em;
   font-weight: 400;
   font-size: 22px;
   color: #fff;
+}
+.discussion__text a {
+  width: 260px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff0033;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
 }
