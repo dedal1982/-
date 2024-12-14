@@ -637,8 +637,10 @@ button {
   flex-direction: column;
   justify-content: center;
 }
+
 .map__info-item:last-child {
-  align-items: flex-end;
+  width: fit-content;
+  margin-left: auto;
 }
 .map__info-item h6 {
   font-weight: 400;
