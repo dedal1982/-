@@ -13,3 +13,35 @@ if (playButtonClose) {
     videoPopup.classList.remove("active");
   });
 }
+
+//переключение табов / мапа
+//функция переключения табов
+const makeCodeUniversal = (
+  tabItemsQuery,
+  formItemsQuery,
+  tabClassName = "active"
+) => {
+  const tabItems = Array.from(document.querySelectorAll(tabItemsQuery));
+  const formItems = Array.from(document.querySelectorAll(formItemsQuery));
+
+  const clearActiveTabs = (element) => {
+    element.find((item) => item.classList.remove(tabClassName));
+  };
+
+  const setActiveTab = (element, index) => {
+    element[index].classList.add(tabClassName);
+  };
+
+  const chekTab = (item, index) => {
+    item.addEventListener("click", () => {
+      clearActiveTabs(tabItems);
+      clearActiveTabs(formItems);
+
+      setActiveTab(tabItems, index);
+      setActiveTab(formItems, index);
+    });
+  };
+  tabItems.forEach(chekTab);
+};
+
+makeCodeUniversal(".map__tab", ".map__page");

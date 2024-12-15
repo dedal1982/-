@@ -665,9 +665,12 @@ button {
   justify-content: center;
 }
 .map__page {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 50px;
+}
+.map__page.active {
+  display: flex;
 }
 .map__main {
   width: 100%;
