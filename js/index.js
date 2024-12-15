@@ -45,3 +45,20 @@ const makeCodeUniversal = (
 };
 
 makeCodeUniversal(".map__tab", ".map__page");
+
+//открытие формы расчета стоимости
+const calculationBtn = document.querySelector(".promo__text a");
+const calculationPopup = document.querySelector(".calculation-popup");
+const calculationBtnClose = document.querySelector(".calculation-wrapper img");
+
+if (calculationBtn) {
+  calculationBtn.addEventListener("click", () => {
+    calculationPopup.classList.add("active");
+  });
+}
+
+if (calculationBtnClose) {
+  calculationBtnClose.addEventListener("click", () => {
+    calculationPopup.classList.remove("active");
+  });
+}
