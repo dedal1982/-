@@ -675,3 +675,8 @@ button {
 .map__main {
   width: 100%;
 }
+/*footer*/
+.footer {
+  width: 100%;
+  background: #001829;
+}
