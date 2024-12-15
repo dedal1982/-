@@ -597,6 +597,7 @@ button {
 .map {
   width: 100%;
   margin-top: 120px;
+  margin-bottom: 120px;
 }
 .map__wrapper {
   display: flex;
@@ -663,4 +664,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.map__page {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.map__main {
+  width: 100%;
 }
