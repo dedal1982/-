@@ -684,10 +684,13 @@ button {
   padding-bottom: 140px;
   box-sizing: border-box;
   display: flex;
+  width: 100%;
+  gap: 200px;
 }
 .footer__item {
-  flex-basis: 50%;
+  width: 696px;
   display: flex;
+  justify-content: space-between;
 }
 .footer__logo {
   width: 348px;
@@ -703,11 +706,114 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin: 140px 0 0 0;
+  margin-top: 140px;
 }
 .footer__links a {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   color: #99a3ab;
+}
+.footer__adress {
+  max-width: 348px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 140px;
+}
+.footer__adress li {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #99a3ab;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer__social li a {
+  width: 52px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.footer__social li a svg {
+  width: 26px;
+}
+/*popup расчет стоимости*/
+.calculation-popup {
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.calculation-wrapper {
+  width: 724px;
+  height: 500px;
+  padding: 12px;
+  border-radius: 7px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.calculation-wrapper h3 {
+  font-weight: 400;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 1);
+  padding: 15px 31px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(82, 92, 105, 0.11);
+}
+.calculation-form {
+  width: 100%;
+  padding: 14px 31px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.calculation-form input {
+  width: 100%;
+  height: 52px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 0.04);
+  border: navajowhite;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin-bottom: 17px;
+}
+.calculation-form input::placeholder {
+  font-size: 17px;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+input:focus {
+  outline: 1px solid #ff0033;
+  background: #fff;
+}
+.calculation-agreement {
+  display: flex;
+  align-items: center;
+}
+.calculation-agreement span {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  border: 1px solid #00000055;
+  display: flex;
+  cursor: pointer;
 }
