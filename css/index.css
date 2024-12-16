@@ -105,6 +105,11 @@ button {
   font-size: 16px;
   color: #fff;
   text-transform: uppercase;
+  transition: all 0.2s ease-out;
+}
+.header__nav ul a:hover,
+.header__nav ul a.active {
+  color: #ff0033;
 }
 .header__item {
   display: flex;
