@@ -1010,14 +1010,22 @@
       <!--расчет стоимости popup-->
       <div class="calculation-popup">
         <div class="calculation-wrapper">
-          <img src="./images/close.png" alt="close" />
+          <img class="calculation-close" src="./images/close.png" alt="close" />
           <h3>Получить расчет за 15 минут</h3>
           <form class="calculation-form" action="">
             <input type="text" placeholder="Имя" />
             <input type="tel" placeholder="Телефон" />
             <div class="calculation-agreement">
-              <span></span>
+              <span><img src="./images/check-icon.png" alt="check" /></span>
+              <p>
+                Нажимая кнопку «Отправить», я даю свое согласие на обработку
+                моих персональных данных, в соответствии с Федеральным законом
+                от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях
+                и для целей, определенных в Согласии на обработку персональных
+                данных *
+              </p>
             </div>
+            <button class="calculation-btn" type="submit">Отправить</button>
           </form>
         </div>
       </div>

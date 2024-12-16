@@ -49,7 +49,7 @@ makeCodeUniversal(".map__tab", ".map__page");
 //открытие формы расчета стоимости
 const calculationBtn = document.querySelector(".promo__text a");
 const calculationPopup = document.querySelector(".calculation-popup");
-const calculationBtnClose = document.querySelector(".calculation-wrapper img");
+const calculationBtnClose = document.querySelector(".calculation-close");
 
 if (calculationBtn) {
   calculationBtn.addEventListener("click", () => {
@@ -60,5 +60,22 @@ if (calculationBtn) {
 if (calculationBtnClose) {
   calculationBtnClose.addEventListener("click", () => {
     calculationPopup.classList.remove("active");
+  });
+}
+
+//соглашение на обработку перс. данных
+const agreementBtn = document.querySelector(".calculation-agreement");
+const agreementCheck = document.querySelector(".calculation-agreement span");
+const calculationSubmitButton = document.querySelector(".calculation-btn");
+
+if (agreementBtn) {
+  agreementBtn.addEventListener("click", () => {
+    if (agreementCheck.classList.contains("active")) {
+      agreementCheck.classList.remove("active");
+      calculationSubmitButton.classList.remove("active");
+    } else {
+      agreementCheck.classList.add("active");
+      calculationSubmitButton.classList.add("active");
+    }
   });
 }
