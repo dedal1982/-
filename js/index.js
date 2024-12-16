@@ -47,13 +47,18 @@ const makeCodeUniversal = (
 makeCodeUniversal(".map__tab", ".map__page");
 
 //открытие формы расчета стоимости
-const calculationBtn = document.querySelector(".promo__text a");
+const calculationBtn = document.querySelectorAll(
+  ".promo__text a,.discussion__text a"
+);
 const calculationPopup = document.querySelector(".calculation-popup");
 const calculationBtnClose = document.querySelector(".calculation-close");
 
 if (calculationBtn) {
-  calculationBtn.addEventListener("click", () => {
-    calculationPopup.classList.add("active");
+  calculationBtn.forEach((item) => {
+    item.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      calculationPopup.classList.add("active");
+    });
   });
 }
 
