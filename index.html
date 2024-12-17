@@ -18,7 +18,8 @@
         <div class="container">
           <div class="header__wrapper">
             <div class="header__logo">
-              <img src="./images/logotk.svg" alt="logo" />
+              <!-- <img src="./images/logotk.svg" alt="logo" /> -->
+              Галиравт
             </div>
             <div class="header__nav">
               <ul>
@@ -34,11 +35,11 @@
               </ul>
               <div class="header__item">
                 <div class="header__phone-item">
-                  <a href="https://wa.me/+79208150000" target="_blank">
+                  <a href="https://wa.me/89600584435" target="_blank">
                     <img src="./images/whatsapp.gif" alt="whatsapp" />
                   </a>
-                  <a class="header__phone" href="tel:88888888888"
-                    >+7 (000) 000 00 00</a
+                  <a class="header__phone" href="tel:89600584435"
+                    >8 (960) 058-44-35</a
                   >
                 </div>
                 <a class="header__phone-btn" href="#">заказать звонок</a>
@@ -787,7 +788,7 @@
             <div class="map__wrapper">
               <div class="map__tabs-items">
                 <div class="map__tab active">Главный офис</div>
-                <div class="map__tab">Партнеры</div>
+                <div class="map__tab">Наши партнеры</div>
               </div>
               <div class="map__page active">
                 <div class="map__info">
@@ -859,7 +860,7 @@
                     type="text/javascript"
                     charset="utf-8"
                     async
-                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A08175a7da6b4de1f94bcc46285353b155324383203674c17070bcd2b1fecd0f8&amp;width=100%25&amp;height=401&amp;lang=ru_RU&amp;scroll=false"
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A14473eee8c4013a6cfa1110f7b8d643c66fd757bbacd03b6fde2d3dcf33a6ae6&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
                   ></script>
                 </div>
               </div>
@@ -933,7 +934,7 @@
                     type="text/javascript"
                     charset="utf-8"
                     async
-                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A08175a7da6b4de1f94bcc46285353b155324383203674c17070bcd2b1fecd0f8&amp;width=100%25&amp;height=401&amp;lang=ru_RU&amp;scroll=false"
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A46f6f91864f6995d49ad5fe17f0e1f3e45aac774d7719378b86338cc9be51e9c&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
                   ></script>
                 </div>
               </div>
@@ -1047,8 +1048,36 @@
           </div>
         </div>
       </div>
-      <!--узнать цену и срок popup-->
+      <!--жду звонка popup-->
+      <div class="calculation-popup the-bell-popup">
+        <div class="calculation-wrapper">
+          <img
+            class="calculation-close the-bell-close"
+            src="./images/close.png"
+            alt="close"
+          />
+          <h3>Получить расчет за 15 минут</h3>
+          <form class="calculation-form" action="">
+            <div class="calculation-item">
+              <input type="tel" placeholder="Телефон" />
+              <input type="text" placeholder="Имя" />
+            </div>
+            <div class="calculation-agreement">
+              <span><img src="./images/check-icon.png" alt="check" /></span>
+              <p>
+                Нажимая кнопку «Отправить», я даю свое согласие на обработку
+                моих персональных данных, в соответствии с Федеральным законом
+                от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях
+                и для целей, определенных в Согласии на обработку персональных
+                данных *
+              </p>
+            </div>
+            <button class="calculation-btn" type="submit">жду звонка</button>
+          </form>
+        </div>
+      </div>
     </div>
     <script src="./js/index.js"></script>
+    <script src="./js/map.js"></script>
   </body>
 </html>

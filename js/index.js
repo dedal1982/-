@@ -46,27 +46,36 @@ const makeCodeUniversal = (
 
 makeCodeUniversal(".map__tab", ".map__page");
 
-//открытие формы расчета стоимости
-const calculationBtn = document.querySelectorAll(
-  ".promo__text a,.discussion__text a"
-);
 const calculationPopup = document.querySelector(".calculation-popup");
+const theBellPopup = document.querySelector(".the-bell-popup");
 const calculationBtnClose = document.querySelector(".calculation-close");
+const theBellBtnClose = document.querySelector(".the-bell-close");
 
-if (calculationBtn) {
-  calculationBtn.forEach((item) => {
-    item.addEventListener("click", (ev) => {
+function addActiveClassOnClick(triggerSelector, targetSelector) {
+  const triggerElement = document.querySelector(triggerSelector);
+  const targetElement = document.querySelector(targetSelector);
+
+  if (triggerElement && targetElement) {
+    triggerElement.addEventListener("click", function (ev) {
       ev.preventDefault();
-      calculationPopup.classList.add("active");
+      targetElement.classList.add("active");
     });
-  });
+  }
+}
+addActiveClassOnClick(".promo__text a", ".calculation-popup");
+addActiveClassOnClick(".discussion__text a", ".the-bell-popup");
+
+function closePopup(button, popupClass) {
+  if (button) {
+    button.addEventListener("click", () => {
+      popupClass.classList.remove("active");
+    });
+  }
 }
 
-if (calculationBtnClose) {
-  calculationBtnClose.addEventListener("click", () => {
-    calculationPopup.classList.remove("active");
-  });
-}
+// Пример использования
+closePopup(calculationBtnClose, calculationPopup);
+closePopup(theBellBtnClose, theBellPopup);
 
 //соглашение на обработку перс. данных
 const agreementBtn = document.querySelector(".calculation-agreement");

@@ -73,16 +73,22 @@ button {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 200px;
+  gap: 100px;
   padding-top: 40px;
   padding-bottom: 40px;
   box-sizing: border-box;
 }
-.header__logo {
+/* .header__logo {
   width: 200px;
   height: 150px;
   border-radius: 50%;
   background: #fff;
+} */
+.header__logo {
+  text-transform: uppercase;
+  font-size: 60px;
+  white-space: nowrap;
+  color: #fff;
 }
 .header__logo img {
   width: 100%;
