@@ -673,7 +673,6 @@ button {
 }
 .map__info-item a {
   display: flex;
-  align-items: center;
   gap: 10px;
   margin-top: 24px;
   font-weight: 700;
