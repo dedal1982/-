@@ -58,7 +58,7 @@
                   Перевозим оборудование, спецтехнику, конструкции
                   и&nbsp;перегоняем грузовой транспорт с&nbsp;2013 года
                 </h4>
-                <a href="#">рассчитать стоимость</a>
+                <a id="btn-1" href="#">рассчитать стоимость</a>
               </div>
             </div>
           </div>
@@ -538,6 +538,24 @@
             </div>
           </div>
         </section>
+        <!-- <section class="discussion discussion-two">
+          <div class="container">
+            <div class="discussion__wrapper">
+              <div class="discussion__text discussion__text-two">
+                <h2>Какой груз и куда доставить?</h2>
+                <p>
+                  Выберите тип груза, укажите пункт отправки и прибытия, а также
+                  срочность задачи, чтобы узнать стоимость перевозки.
+                </p>
+                <p>
+                  Мы либо сразу укажем стоимость, либо перезвоним в течение 10
+                  минут для уточнения деталей.
+                </p>
+                <a id="btn-2" href="#">Выбрать тип груза</a>
+              </div>
+            </div>
+          </div>
+        </section> -->
         <section class="actions">
           <div class="container">
             <div class="actions__wrapper">
@@ -742,7 +760,7 @@
                   Введите номер телефона или сразу напишите в WhatsApp, чтобы мы
                   доказали нашу экспертность и надёжность.
                 </p>
-                <a href="#">Обсудить работу</a>
+                <a id="btn-3" href="#">Обсудить работу</a>
               </div>
             </div>
           </div>
@@ -1073,6 +1091,41 @@
               </p>
             </div>
             <button class="calculation-btn" type="submit">жду звонка</button>
+          </form>
+        </div>
+      </div>
+      <!--выбрать тип груза popup-->
+      <div class="calculation-popup type-of-cargo-popup">
+        <div class="calculation-wrapper">
+          <img
+            class="calculation-close the-bell-close"
+            src="./images/close.png"
+            alt="close"
+          />
+          <h3>Рассчитать стоимость</h3>
+          <form class="calculation-form" action="">
+            <div class="calculation-item">
+              <label for="">Груз</label>
+              <input type="text" placeholder="Груз (наименование)" />
+              <input type="text" placeholder="Откуда" />
+              <input type="text" placeholder="Куда" />
+            </div>
+            <div class="calculation-item">
+              <label for="">Контакты</label>
+              <input type="tel" placeholder="Телефон" />
+              <input type="text" placeholder="Имя" />
+            </div>
+            <div class="calculation-agreement">
+              <span><img src="./images/check-icon.png" alt="check" /></span>
+              <p>
+                Нажимая кнопку «Отправить», я даю свое согласие на обработку
+                моих персональных данных, в соответствии с Федеральным законом
+                от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях
+                и для целей, определенных в Согласии на обработку персональных
+                данных *
+              </p>
+            </div>
+            <button class="calculation-btn" type="submit">отправить</button>
           </form>
         </div>
       </div>
