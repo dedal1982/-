@@ -1500,6 +1500,9 @@ button {
     height: fit-content;
     overflow: auto;
   }
+  .type-of-cargo-wrapper {
+    height: 90dvh;
+  }
 }
 .calculation-close {
   width: 30px;
