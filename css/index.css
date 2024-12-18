@@ -1497,7 +1497,7 @@ button {
 }
 @media screen and (max-width: 767px) {
   .calculation-wrapper {
-    height: 90dvh;
+    height: fit-content;
     overflow: auto;
   }
 }
