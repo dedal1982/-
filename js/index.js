@@ -126,3 +126,9 @@ if (burgerBtn) {
 }
 
 //открытие форм
+const btnFormOne = document.getElementById("#btn-1");
+const btnFormTwo = document.getElementById("#btn-1");
+const btnFormThree = document.getElementById("#btn-1");
+const pageFormOne = document.getElementById("#f-1");
+const pageFormTwo = document.getElementById("#f-2");
+const pageFormThree = document.getElementById("#f-3");
