@@ -111,3 +111,16 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   );
 });
+
+//бургер меню
+const burgerBtn = document.querySelector(".header__burger");
+const mobileMenu = document.querySelector(".mobile-menu");
+const bodyLock = document.querySelector(".body");
+
+if (burgerBtn) {
+  burgerBtn.addEventListener("click", () => {
+    burgerBtn.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
+    bodyLock.classList.toggle("lock");
+  });
+}
