@@ -1184,6 +1184,15 @@ button {
   display: flex;
   flex-direction: column;
 }
+.map__wrapper h2 {
+  font-size: 62px;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 1024px) {
+  .map__wrapper h2 {
+    font-size: 46px;
+  }
+}
 .map__tabs-items {
   display: flex;
   align-items: center;
@@ -1200,6 +1209,11 @@ button {
   cursor: pointer;
   padding: 5px 32px;
 }
+@media screen and (max-width: 1024px) {
+  .map__tab {
+    font-size: 24px;
+  }
+}
 .map__tab.active {
   color: #fff;
   background: #ff0033;
@@ -1207,10 +1221,16 @@ button {
 .map__info {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-top: 80px;
   margin-bottom: 80px;
+}
+@media screen and (max-width: 1024px) {
+  .map__info {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 .map__info-item {
   width: 33%;
@@ -1228,6 +1248,11 @@ button {
   font-size: 22px;
   line-height: 1.4em;
   color: #737373;
+}
+@media screen and (max-width: 1024px) {
+  .map__info-item h6 {
+    font-size: 16px;
+  }
 }
 .map__info-item a {
   display: flex;
