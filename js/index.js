@@ -126,9 +126,48 @@ if (burgerBtn) {
 }
 
 //открытие форм
-const btnFormOne = document.getElementById("#btn-1");
-const btnFormTwo = document.getElementById("#btn-1");
-const btnFormThree = document.getElementById("#btn-1");
-const pageFormOne = document.getElementById("#f-1");
-const pageFormTwo = document.getElementById("#f-2");
-const pageFormThree = document.getElementById("#f-3");
+const btnFormOne = document.getElementById("btn-1");
+const btnFormTwo = document.getElementById("btn-2");
+const btnFormThree = document.getElementById("btn-3");
+const pageFormOne = document.getElementById("f-1");
+const pageFormTwo = document.getElementById("f-2");
+const pageFormThree = document.getElementById("f-3");
+const btnsFormClose = document.querySelectorAll(".calculation-close");
+const formPopups = document.querySelectorAll(".calculation-popup");
+
+if (btnFormOne) {
+  btnFormOne.addEventListener("click", (ev) => {
+    ev.preventDefault();
+    pageFormOne.classList.add("active");
+    pageFormTwo.classList.remove("active");
+    pageFormThree.classList.remove("active");
+  });
+}
+
+if (btnFormTwo) {
+  btnFormTwo.addEventListener("click", (ev) => {
+    ev.preventDefault();
+    pageFormTwo.classList.add("active");
+    pageFormOne.classList.remove("active");
+    pageFormThree.classList.remove("active");
+  });
+}
+
+if (btnFormThree) {
+  btnFormThree.addEventListener("click", (ev) => {
+    ev.preventDefault();
+    pageFormThree.classList.add("active");
+    pageFormOne.classList.remove("active");
+    pageFormTwo.classList.remove("active");
+  });
+}
+
+if (btnsFormClose) {
+  btnsFormClose.forEach((item) => {
+    item.addEventListener("click", () => {
+      formPopups.forEach((elem) => {
+        elem.classList.remove("active");
+      });
+    });
+  });
+}
