@@ -15,7 +15,6 @@ if (playButtonClose) {
 }
 
 //переключение табов / мапа
-//функция переключения табов
 const makeCodeUniversal = (
   tabItemsQuery,
   formItemsQuery,
@@ -58,7 +57,7 @@ if (agreementBtn) {
         agreementCheck.classList.remove("active");
         calculationSubmitButton.classList.remove("active");
       } else {
-        agreementCheck.classList.add("active");
+        elem.classList.add("active");
         calculationSubmitButton.classList.add("active");
       }
     });
@@ -169,6 +168,12 @@ if (btnsFormClose) {
     item.addEventListener("click", () => {
       formPopups.forEach((elem) => {
         elem.classList.remove("active");
+        const agreementCheckMob = document.querySelectorAll(
+          ".calculation-agreement span"
+        );
+        agreementCheckMob.forEach((element) => {
+          element.classList.remove("active");
+        });
       });
     });
   });
