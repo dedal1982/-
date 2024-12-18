@@ -1180,6 +1180,12 @@ button {
   margin-top: 120px;
   margin-bottom: 120px;
 }
+@media screen and (max-width: 767px) {
+  .map {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
 .map__wrapper {
   display: flex;
   flex-direction: column;
@@ -1198,6 +1204,11 @@ button {
   align-items: center;
   gap: 20px;
 }
+@media screen and (max-width: 767px) {
+  .map__tabs-items {
+    gap: 10px;
+  }
+}
 .map__tab {
   display: flex;
   align-items: center;
@@ -1212,6 +1223,12 @@ button {
 @media screen and (max-width: 1024px) {
   .map__tab {
     font-size: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .map__tab {
+    font-size: 22px;
+    padding: 5px 10px;
   }
 }
 .map__tab.active {
@@ -1232,16 +1249,32 @@ button {
     margin-bottom: 50px;
   }
 }
+@media screen and (max-width: 767px) {
+  .map__info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
 .map__info-item {
   width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
+@media screen and (max-width: 767px) {
+  .map__info-item {
+    width: 100%;
+  }
+}
 .map__info-item:last-child {
   width: fit-content;
   margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .map__info-item:last-child {
+    margin-left: 0;
+  }
 }
 .map__info-item h6 {
   font-weight: 400;
@@ -1262,6 +1295,16 @@ button {
   font-size: 22px;
   color: #202020;
 }
+@media screen and (max-width: 1024px) {
+  .map__info-item a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .map__info-item a {
+    margin-top: 5px;
+  }
+}
 .map__info-item a span {
   width: 22px;
   height: 22px;
@@ -1272,7 +1315,6 @@ button {
 .map__page {
   display: none;
   flex-direction: column;
-  gap: 50px;
 }
 .map__page.active {
   display: flex;
