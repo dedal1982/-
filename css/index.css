@@ -1446,6 +1446,9 @@ button {
   display: flex;
   flex-direction: column;
 }
+.title-center {
+  text-align: center;
+}
 @media screen and (max-width: 767px) {
   .calculation-form {
     padding: 14px 18px;

@@ -124,3 +124,5 @@ if (burgerBtn) {
     bodyLock.classList.toggle("lock");
   });
 }
+
+//открытие форм
