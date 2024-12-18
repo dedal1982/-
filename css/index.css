@@ -288,7 +288,7 @@ button {
 @media screen and (max-width: 767px) {
   .promo__wrapper {
     padding-top: 135px;
-    padding-bottom: 370px;
+    padding-bottom: 415px;
     box-sizing: border-box;
   }
 }
