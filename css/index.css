@@ -1374,35 +1374,56 @@ button {
   background: #001829;
 }
 .footer__wrapper {
-  padding-bottom: 140px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   box-sizing: border-box;
-  display: flex;
   width: 100%;
-  gap: 200px;
-}
-.footer__item {
-  width: 696px;
   display: flex;
   justify-content: space-between;
+  gap: 50px;
+}
+@media screen and (max-width: 1023px) {
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__wrapper {
+    align-items: flex-start;
+    gap: 30px;
+  }
 }
 .footer__logo {
   width: 280px;
-  height: fit-content;
-  margin-right: 100px;
 }
-.footer__logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin-top: 140px;
+@media screen and (max-width: 767px) {
+  .footer__logo {
+    width: 250px;
+  }
+}
+.footer__inner {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+@media screen and (max-width: 1070px) {
+  .footer__inner {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
 }
 .footer__links {
-  max-width: 348px;
+  max-width: 380px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 140px;
 }
 .footer__links a {
   font-weight: 400;
@@ -1410,13 +1431,10 @@ button {
   line-height: 25px;
   color: #99a3ab;
 }
-.footer__adress {
-  max-width: 348px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 140px;
+@media screen and (max-width: 767px) {
+  .footer__links a {
+    font-size: 14px;
+  }
 }
 .footer__adress li {
   font-weight: 400;
@@ -1431,11 +1449,17 @@ button {
 }
 .footer__social li a {
   width: 52px;
-  height: 50px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
+}
+@media screen and (max-width: 767px) {
+  .footer__social li a {
+    width: 36px;
+    height: 36px;
+  }
 }
 .footer__social li a svg {
   width: 26px;
