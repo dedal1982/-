@@ -828,7 +828,6 @@ button {
   font-weight: 700;
   font-size: 62px;
   line-height: 1.2em;
-  letter-spacing: -3.8px;
   color: #202020;
   max-width: 1028px;
   width: 100%;
@@ -841,7 +840,6 @@ button {
 @media screen and (max-width: 768px) {
   .actions__text h3 {
     font-size: 35px;
-    letter-spacing: -0rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -971,12 +969,23 @@ button {
   }
 }
 .discussion-two {
-  background: url(../images/discussion-two.png);
+  background: url(../images/discussion-bg.webp);
   background-position: right;
   margin-top: 0;
-  padding-top: 120px;
+  padding-top: 150px;
   padding-bottom: 120px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 1024px) {
+  .discussion-two {
+  }
+}
+@media screen and (max-width: 767px) {
+  .discussion-two {
+    background: url(../images/discussion-bg-375.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 .discussion__wrapper {
   display: flex;
@@ -1007,6 +1016,20 @@ button {
 }
 .discussion__text-two {
   max-width: 817px;
+}
+@media screen and (max-width: 1024px) {
+  .discussion__text-two {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .discussion__text-two {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .discussion__text-two h2 {
+    margin-top: 150px;
+  }
 }
 .discussion__text h2 {
   font-size: 62px;
