@@ -180,6 +180,25 @@ button {
     width: 100%;
     height: 100dvh;
     background: #0b283c;
+    padding: 90px 20px 20px 20px;
+    box-sizing: border-box;
+  }
+  .mobile-menu__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-menu__wrapper ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .mobile-menu__wrapper ul li a {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #fff;
   }
   .header__burger {
     display: block;
@@ -1365,12 +1384,15 @@ button {
   justify-content: space-between;
 }
 .footer__logo {
-  width: 348px;
+  width: 280px;
+  height: fit-content;
+  margin-right: 100px;
 }
 .footer__logo img {
   width: 100%;
   height: 100%;
-  border-radius: inherit;
+  object-fit: cover;
+  margin-top: 140px;
 }
 .footer__links {
   max-width: 348px;
