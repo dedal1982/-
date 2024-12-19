@@ -48,18 +48,17 @@ makeCodeUniversal(".map__tab", ".map__page");
 //соглашение на обработку перс. данных
 const agreementBtn = document.querySelectorAll(".calculation-agreement");
 const agreementCheck = document.querySelectorAll(".calculation-agreement span");
-const calculationSubmitButton = document.querySelector(".calculation-btn");
+const calculationSubmitButton = document.querySelectorAll(".calculation-btn");
 
 if (agreementBtn) {
   agreementBtn.forEach((item) => {
     item.addEventListener("click", () => {
-      if (agreementCheck.classList.contains("active")) {
-        agreementCheck.classList.remove("active");
-        calculationSubmitButton.classList.remove("active");
-      } else {
+      agreementCheck.forEach((elem) => {
         elem.classList.add("active");
-        calculationSubmitButton.classList.add("active");
-      }
+      });
+      calculationSubmitButton.forEach((el) => {
+        el.classList.add("active");
+      });
     });
   });
 }
@@ -173,6 +172,11 @@ if (btnsFormClose) {
         );
         agreementCheckMob.forEach((element) => {
           element.classList.remove("active");
+        });
+        const calculationSubmitButtonMob =
+          document.querySelectorAll(".calculation-btn");
+        calculationSubmitButtonMob.forEach((el) => {
+          el.classList.remove("active");
         });
       });
     });
