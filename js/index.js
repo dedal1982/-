@@ -182,3 +182,32 @@ if (btnsFormClose) {
     });
   });
 }
+
+if (calculationSubmitButton) {
+  calculationSubmitButton.forEach((item) => {
+    item.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      formPopups.forEach((elem) => {
+        elem.classList.remove("active");
+      });
+      agreementCheck.forEach((elem) => {
+        elem.classList.remove("active");
+      });
+      item.classList.remove("active");
+    });
+  });
+}
+
+//закрытие бургера при клике на ссылку
+const mobileMenuLinks = document.querySelectorAll(
+  ".mobile-menu__wrapper ul li a"
+);
+
+if (mobileMenuLinks) {
+  mobileMenuLinks.forEach((item) => {
+    item.addEventListener("click", () => {
+      burgerBtn.classList.remove("active");
+      mobileMenu.classList.remove("active");
+    });
+  });
+}
